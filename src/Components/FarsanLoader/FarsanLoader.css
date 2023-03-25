@@ -1,0 +1,12 @@
+.farsan-loader {
+  width: 100vw;
+  height: 85vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+img.farsan-loader-image {
+  width: 35em;
+}

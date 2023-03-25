@@ -1,0 +1,27 @@
+.ridewithus {
+  width: 100vw;
+  min-height: 85vh;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ridewithus-header {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 96px;
+  /* identical to box height */
+
+  color: #3f3d56;
+  margin: 20px 0;
+}
+
+iframe.google-iframe {
+  width: 80%;
+  padding: 50px;
+  height: 70vh;
+}

@@ -1,0 +1,44 @@
+.about-us {
+  width: 100vw;
+  min-height: 85vh;
+  height: fit-content;
+  padding: 100px 0;
+}
+
+.about-us-inside {
+  width: 80%;
+  height: 100%;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUs-header {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 144px;
+  /* identical to box height */
+
+  color: #474747;
+}
+
+.about-para {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 36px;
+  width: 50%;
+  color: #5e5e5e;
+  margin: 10px auto;
+}
+
+img.about-us-image {
+  width: 10em;
+  padding: 100px;
+}

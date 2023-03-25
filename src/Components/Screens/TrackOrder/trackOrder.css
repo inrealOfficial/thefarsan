@@ -1,0 +1,339 @@
+.track-order {
+  width: 100vw;
+  height: 85vh;
+  background: linear-gradient(180deg, #3f3d56 0%, #2f2e41 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.track-order-inside {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0px 4px 16px #8a7e7e;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-tracking {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 96px;
+  /* identical to box height */
+  text-align: center;
+  color: #3f3d56;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-tracking-inside {
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.hti-top-left {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+
+.hti-qr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.hti-top {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hti-stepper {
+  width: 100%;
+}
+
+.order-id {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.hti-order-id {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 48px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.roboto {
+  font-family: "Roboto Mono";
+}
+
+.hti-get-help {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height */
+  color: #ffffff;
+  background: #ff4949;
+  border: 0px;
+  width: 30%;
+  padding: 10px 0;
+  transition: 0.2s all;
+}
+
+.hti-get-help-delivered {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height */
+
+  color: #ffffff;
+  background: linear-gradient(90deg, #60db7b 0%, #00b37d 100%);
+  box-shadow: 0px 4px 25px #dadada;
+  border: 0px;
+  width: 30%;
+  padding: 10px 0;
+  transition: 0.2s all;
+  margin-left: 10px;
+}
+
+.hti-get-help-pending {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height */
+  color: #ffffff;
+  background: #ff8b49;
+  border: 0px;
+  width: 30%;
+  padding: 10px 0;
+  transition: 0.2s all;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.hti-get-help-pending:hover {
+  transform: scale(1.05);
+}
+
+.hti-get-help:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.hti-bottom {
+  display: flex;
+
+  width: 100%;
+  align-items: center;
+  margin: 50px 0;
+  justify-content: left;
+}
+
+.delivery-icon-hti {
+  font-size: 400px;
+}
+
+@media screen and (max-width: 900px) {
+  .h1-top-left {
+    display: none;
+  }
+  .track-order {
+    width: 100vw;
+    height: fit-content;
+    min-height: 85vh;
+    background: linear-gradient(180deg, #3f3d56 0%, #2f2e41 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .track-order-inside {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0px 4px 16px #8a7e7e;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-tracking {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 96px;
+    /* identical to box height */
+    text-align: center;
+    color: #3f3d56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-tracking-inside {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    justify-content: space-between;
+  }
+
+  .hti-top-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+  }
+  .MuiStepLabel-labelContainer span {
+    font-size: 10px;
+    font-family: "Poppins";
+  }
+
+  .hti-qr {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  .hti-top {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hti-stepper {
+    width: 100%;
+  }
+
+  .order-id {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .hti-order-id {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 48px;
+    /* identical to box height */
+
+    color: #000000;
+  }
+
+  .roboto {
+    font-family: "Roboto Mono";
+  }
+
+  .hti-get-help {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #ffffff;
+    background: #ff4949;
+    border: 0px;
+    width: 50%;
+
+    transition: 0.2s all;
+  }
+
+  .hti-get-help-delivered {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height */
+
+    color: #ffffff;
+    background: linear-gradient(90deg, #60db7b 0%, #00b37d 100%);
+    box-shadow: 0px 4px 25px #dadada;
+    border: 0px;
+    width: 70%;
+    padding: 10px 0;
+    transition: 0.2s all;
+  }
+
+  .hti-get-help-pending {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 36px;
+    /* identical to box height */
+
+    color: #ffffff;
+    background: #ffaf37;
+    box-shadow: 0px 4px 25px #dadada;
+    border: 0px;
+    width: 70%;
+    padding: 0 0;
+    transition: 0.2s all;
+    margin: 10px 0;
+  }
+
+  .hti-get-help:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  .hti-bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 50px 0;
+    justify-content: center;
+  }
+
+  .delivery-icon-hti {
+    font-size: 400px;
+  }
+}

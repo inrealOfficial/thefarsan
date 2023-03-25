@@ -1,0 +1,18 @@
+.coupons-div {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.404);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999999;
+}
+
+.coupons-div-inside {
+  width: 50%;
+  height: 60vh;
+  background-color: white;
+}

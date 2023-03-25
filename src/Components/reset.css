@@ -1,0 +1,23 @@
+.reset-password {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-password-form {
+  width: 30%;
+}
+
+.reset-password-page {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 96px;
+  /* identical to box height */
+
+  color: #3f3d56;
+}

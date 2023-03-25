@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a1b106bb.css",
+    "main.js": "/static/js/main.1f4b97e8.js",
+    "static/js/787.46f57f8c.chunk.js": "/static/js/787.46f57f8c.chunk.js",
+    "static/media/product2.jpg": "/static/media/product2.f0e170a4c752ac2d1027.jpg",
+    "static/media/hp-image.jpg": "/static/media/hp-image.e11629a6aac26d7ace10.jpg",
+    "static/media/contact.jpg": "/static/media/contact.47ec067111fda19e4c23.jpg",
+    "pdf.worker.js": "/e7e915313973ba1d49f9bb2a1998626e.js",
+    "static/media/ChetanLoading.gif": "/static/media/ChetanLoading.2f343054258cb975f223.gif",
+    "static/media/mix-chivda.png": "/static/media/mix-chivda.bc125ea088e6d4776113.png",
+    "static/media/tosold2.pdf": "/static/media/tosold2.8352df20bfbcbf26586e.pdf",
+    "static/media/privacy.pdf": "/static/media/privacy.91d187d5b40b7e4dcc48.pdf",
+    "static/media/help.png": "/static/media/help.0958c73f80faf38708b0.png",
+    "static/media/Refundpolicy.pdf": "/static/media/Refundpolicy.d74f0a913d58b975e654.pdf",
+    "static/media/UseofSite.pdf": "/static/media/UseofSite.c400845e6752196689fd.pdf",
+    "static/media/undraw_order_delivered_re_v4ab.svg": "/static/media/undraw_order_delivered_re_v4ab.36370163e63390c051a576ebe83ae6e6.svg",
+    "static/media/farsan.svg": "/static/media/farsan.9dddb69c76e211a7822b961468e67773.svg",
+    "static/media/undraw_on_the_way_re_swjt.svg": "/static/media/undraw_on_the_way_re_swjt.57f04cc5cbb7de84b0899c0042edc970.svg",
+    "static/media/undraw_contact_us_re_4qqt.svg": "/static/media/undraw_contact_us_re_4qqt.094da7f983989377d7280d7ade8beae9.svg",
+    "static/media/thefarsan.png": "/static/media/thefarsan.b0132d643ef73fe725dc.png",
+    "static/media/undraw_delivery_address_re_cjca.svg": "/static/media/undraw_delivery_address_re_cjca.73b3ee17f417024fbb83c2496649847c.svg",
+    "static/media/notFound2.svg": "/static/media/notFound2.b667bccfd0405766137f85c255e55c4d.svg",
+    "static/media/undraw_starry_window_re_0v82.svg": "/static/media/undraw_starry_window_re_0v82.55a97f5b3ad9d5ff95c3c196c1a6a1ad.svg",
+    "static/media/thefarsanwhite.png": "/static/media/thefarsanwhite.f86977249534f318863c.png",
+    "static/media/undraw_empty_cart_co35.svg": "/static/media/undraw_empty_cart_co35.398dce8a7577df9bb5e03a3ca52346ff.svg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.a1b106bb.css.map": "/static/css/main.a1b106bb.css.map",
+    "main.1f4b97e8.js.map": "/static/js/main.1f4b97e8.js.map",
+    "787.46f57f8c.chunk.js.map": "/static/js/787.46f57f8c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1b106bb.css",
+    "static/js/main.1f4b97e8.js"
+  ]
+}

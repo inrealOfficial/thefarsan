@@ -1,0 +1,132 @@
+.ourMenu {
+  width: 100vw;
+  min-height: 85vh;
+}
+
+.ourMenu-content {
+  width: 85vw;
+  margin: 0 auto;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+.top-content-ourMenu {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ourMenu-searchBar {
+  width: 80%;
+  font-family: "Poppins";
+  font-size: 16px;
+  height: 5vh;
+  color: black;
+  background: #ffffff;
+  opacity: 1;
+  border: 0px;
+  box-shadow: 0px 4px 26px #e4e3e3;
+  border-radius: 10px;
+  transition: 0.2s ease;
+  outline: none;
+  padding: 0 20px;
+}
+
+.ourMenu-searchBar:hover {
+  transform: scale(1.01);
+}
+
+.top-content-ourMenu-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  letter-spacing: 0.63em;
+
+  color: #de6000;
+}
+
+.p3-menu-div-orange {
+  width: 25em;
+  background: #fa9c3e;
+  box-shadow: 0px 4px 26px #ffd8b5;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+  margin: 30px;
+}
+
+.product-farsan-name-orange {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 48px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.product-farsan-price-orange {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.hp-order-now-btn-p3-orange {
+  text-decoration: none;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
+  box-shadow: 0px 4px 17px #cfcfcf;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  transition: 0.2s ease;
+}
+
+.bottom-content-ourMenu-inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+  .top-content-ourMenu {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top-content-ourMenu-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    padding: 20px 0;
+    letter-spacing: 0.63em;
+
+    color: #de6000;
+  }
+  input::placeholder {
+    font-size: 1px;
+  }
+}

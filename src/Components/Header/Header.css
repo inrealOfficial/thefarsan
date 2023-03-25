@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400&family=Gulzar&family=PT+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.header {
+  width: 100vw;
+  min-height: 15vh;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 2;
+}
+
+.header-content {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-content-left {
+  width: 40%;
+}
+.icon {
+  display: none;
+}
+
+.header-content-left img {
+  width: 10em;
+}
+
+.header-content-right {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header-element {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.header-element-profile {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  transition: 0.2s ease;
+}
+
+.header-element-profile:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.header-element-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fa9b3d;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height */
+  padding: 10px 20px;
+  color: #ffffff;
+}
+
+.gg-shopping-cart {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  transform: scale(var(--ggs, 1));
+  width: 20px;
+  height: 21px;
+  background: linear-gradient(to left, currentColor 12px, transparent 0)
+      no-repeat -1px 6px/18px 2px,
+    linear-gradient(to left, currentColor 12px, transparent 0) no-repeat 6px
+      14px/11px 2px,
+    linear-gradient(to left, currentColor 12px, transparent 0) no-repeat 0 2px/4px
+      2px,
+    radial-gradient(circle, currentColor 60%, transparent 40%) no-repeat 12px
+      17px/4px 4px,
+    radial-gradient(circle, currentColor 60%, transparent 40%) no-repeat 6px
+      17px/4px 4px;
+}
+.gg-shopping-cart::after,
+.gg-shopping-cart::before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 2px;
+  height: 14px;
+  background: currentColor;
+  top: 2px;
+  left: 4px;
+  transform: skew(12deg);
+}
+.gg-shopping-cart::after {
+  height: 10px;
+  top: 6px;
+  left: 16px;
+  transform: skew(-12deg);
+}
+
+.ham {
+  list-style: none;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 20px 20px;
+  font-weight: 800;
+  transition: 0.4s all;
+  font-family: "Poppins";
+  border-width: 50%;
+  margin: 0.5em 0em;
+  font-size: 1rem;
+}
+
+li.navbar-dropdown {
+  position: relative;
+}
+
+li.navbar-dropdown:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+li.navbar-dropdown .dropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding: 20px 0;
+  top: 100%;
+  transform: translateY(50px);
+  left: -10px;
+  width: fit-content;
+  min-width: 200px;
+  background-image: linear-gradient(to bottom, #ffffffd7, #ffffffe1);
+  box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  z-index: 111;
+  transition: 0.4s all;
+  border-radius: 10px 47px 10px 47px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+li.navbar-dropdown .dropdown a {
+  text-decoration: none;
+  color: #000000;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  transition: 0.2s ease;
+}
+.navbar-dropdown .dropdown a:hover {
+  /* padding-left: 30px; */
+  transform: scale(1.1);
+}
+li a:hover {
+}
+
+.underline_right:after {
+  position: absolute;
+  z-index: -1;
+}
+
+.underline_right:after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+}
+
+.underline_right:hover {
+  cursor: pointer;
+}
+
+.underline_right:focus:after,
+.underline_right:hover:after {
+  width: 50%;
+  height: 3px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.header-bottom {
+  display: none;
+  position: sticky;
+}
+
+.hidden {
+  display: none !important;
+}
+@media screen and (max-width: 768px) {
+  .hidden {
+    display: inline-block !important;
+  }
+  .navbar-dropdown {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact1 {
+    padding-top: 5em;
+  }
+}
+
+.badge-content {
+  transition: 0.2s ease;
+}
+
+.badge-content:hover {
+  transform: scale(1.2);
+}
+
+.header-bottom-inside {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.header-content-right-inside-responsive {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .header-content-right-inside-responsive {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    top: 2000px;
+    left: 0;
+    background: rgba(250, 156, 62, 0.98);
+    transition: 0.5s all;
+  }
+
+  .img-close {
+    width: 80%;
+
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    margin: 50px 0;
+  }
+
+  .header-element-responsive {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    margin: 10px 0;
+    color: #ffffff;
+  }
+  .header-content {
+    width: 90vw;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .icon {
+    display: block;
+    width: 32px;
+    color: #000000;
+  }
+
+  .header-content-right {
+    display: none;
+  }
+
+  .header-bottom {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100vw;
+    height: 8vh;
+    background-color: #2f2e41;
+    z-index: 99;
+  }
+
+  .header-bottom-inside {
+    width: 80vw;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 900px) {
+}

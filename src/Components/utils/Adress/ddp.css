@@ -1,0 +1,55 @@
+.delivery-div-price {
+  width: 100%;
+  height: fit-content;
+}
+
+.ddp-inside {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.express-delivery-image {
+  width: 20em;
+}
+
+.express-delivery-image-small {
+  width: 15em;
+}
+
+.ddp-left {
+  width: 40%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0px 4px 25px #bbbbbb;
+  transition: 0.2s all;
+}
+
+.ddp-selected {
+  border: 2px solid green;
+}
+
+.ddp-left:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.ddp-delivery-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #000000;
+}

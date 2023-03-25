@@ -1,0 +1,11 @@
+.list-users-screen {
+  width: 100vw;
+  min-height: 85vh;
+}
+
+.list-user-inside {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
