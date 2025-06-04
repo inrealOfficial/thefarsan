@@ -25,7 +25,7 @@ import {
   ORDER_STAGE_REQUEST,
   ORDER_STAGE_SUCESS,
 } from "../constants/orderConstants";
-
+import URL from "./../Data/data.json";
 export const createOrder = (order) => async (dispatch, getState) => {
   try {
     dispatch({
@@ -40,11 +40,7 @@ export const createOrder = (order) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.post(
-      `https://app-farsan.herokuapp.com/api/orders`,
-      order,
-      config
-    );
+    const { data } = await axios.post(`${URL}api/orders`, order, config);
 
     dispatch({
       type: ORDER_CREATE_SUCESS,
@@ -74,10 +70,7 @@ export const getOrderDetails = (id) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.get(
-      `https://app-farsan.herokuapp.com/api/orders/${id}`,
-      config
-    );
+    const { data } = await axios.get(`${URL}api/orders/${id}`, config);
 
     dispatch({
       type: ORDER_DETAILS_SUCESS,
@@ -110,7 +103,7 @@ export const payOrder =
         },
       };
       const { data } = await axios.put(
-        `https://app-farsan.herokuapp.com/api/orders/${orderId}/pay`,
+        `${URL}api/orders/${orderId}/pay`,
         paymentResult,
         config
       );
@@ -143,10 +136,7 @@ export const listMyOrders = () => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.get(
-      `https://app-farsan.herokuapp.com/api/orders/myorders`,
-      config
-    );
+    const { data } = await axios.get(`${URL}api/orders/myorders`, config);
 
     dispatch({
       type: ORDER_LIST_MY_SUCESS,
@@ -176,10 +166,7 @@ export const listOrders = () => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.get(
-      `https://app-farsan.herokuapp.com/api/orders`,
-      config
-    );
+    const { data } = await axios.get(`${URL}api/orders`, config);
 
     dispatch({
       type: ORDER_LIST_SUCESS,
@@ -213,7 +200,7 @@ export const orderDeliver = (orderId) => async (dispatch, getState) => {
     };
     console.log(config);
     const { data } = await axios.put(
-      `https://app-farsan.herokuapp.com/api/orders/${orderId}/delivered`,
+      `${URL}api/orders/${orderId}/delivered`,
       {},
       config
     );
@@ -246,10 +233,7 @@ export const deleteOrder = (id) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    await axios.delete(
-      `https://app-farsan.herokuapp.com/api/orders/${id}`,
-      config
-    );
+    await axios.delete(`${URL}api/orders/${id}`, config);
 
     dispatch({
       type: ORDER_DELETE_SUCESS,
@@ -283,7 +267,7 @@ export const orderStageChanger =
       };
       console.log(config);
       const { data } = await axios.put(
-        `https://app-farsan.herokuapp.com/api/orders/${orderId}/Stage`,
+        `${URL}api/orders/${orderId}/Stage`,
         { stage },
         config
       );

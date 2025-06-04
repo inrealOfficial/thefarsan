@@ -4,16 +4,14 @@ import {
   COUPONS_CREATE_REQUEST,
   COUPONS_CREATE_SUCESS,
 } from "../constants/couponsConstant";
-
+import URL from "./../Data/data.json";
 export const listMyCoupons = () => async (dispatch, getState) => {
   try {
     dispatch({
       type: COUPONS_CREATE_REQUEST,
     });
 
-    const { data } = await axios.get(
-      `https://hcc-backend.onrender.com/api/coupons/getmycoupons`
-    );
+    const { data } = await axios.get(`${URL}api/coupons/getmycoupons`);
 
     dispatch({
       type: COUPONS_CREATE_SUCESS,

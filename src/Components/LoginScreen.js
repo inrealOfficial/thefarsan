@@ -11,8 +11,6 @@ import { motion } from "framer-motion";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { USER_LOGOUT } from "../constants/userConstants";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 
 const LoginScreen = () => {
   const navigate = useNavigate();
@@ -118,7 +116,9 @@ const LoginScreen = () => {
           <div className="login-page-right">
             <div
               className="login-page-right-content"
-              style={{ backgroundImage: `url("${src}")` }}
+              style={{
+                backgroundImage: `url("https://img.freepik.com/free-photo/top-close-up-view-cabbage-brown-plate-cabbage-bowls-spices_140725-71483.jpg?t=st=1739281223~exp=1739284823~hmac=19a4746f6ed9deefeb44b71756c026e2090e18b39d9769195759fbd25e4e96eb&w=1380")`,
+              }}
             ></div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
+// import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import React, { useState } from "react";
 import pdf from "./tosold2.pdf";
 import Header from "../../Header/Header";
@@ -21,7 +21,7 @@ const TOS = () => {
 
       <center>
         <div>
-          <Document
+          {/* <Document
             file={pdf}
             onLoadProgress={LoadingProgress}
             onLoadSuccess={onDocumentLoadSuccess}
@@ -33,7 +33,7 @@ const TOS = () => {
                 width="1000"
               />
             ))}
-          </Document>
+          </Document> */}
         </div>
       </center>
     </>

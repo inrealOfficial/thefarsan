@@ -320,6 +320,16 @@ const Adress = ({ shippingFee }) => {
                 Enter OTP
               </span>
               <OtpInput
+                value={otp}
+                onChange={setOTP}
+                numInputs={6}
+                inputStyle="otp-input"
+                renderSeparator={<span> </span>}
+                containerStyle="otp-input"
+                renderInput={(props) => <input {...props} />}
+                isInputNum="true"
+              />
+              {/* <OtpInput
                 className="otp-input"
                 value={otp}
                 onChange={(otp) => setOTP(otp)}
@@ -327,7 +337,7 @@ const Adress = ({ shippingFee }) => {
                 numInputs={6}
                 containerStyle="otp-input"
                 isInputNum="true"
-              />
+              /> */}
               <Button
                 style={{
                   backgroundColor: "#FA9B3D",

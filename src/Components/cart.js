@@ -55,6 +55,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { listMyCoupons } from "../actions/couponsAction";
 
 import InfoIcon from "@mui/icons-material/Info";
+import { car } from "@cloudinary/url-gen/qualifiers/focusOn";
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -199,7 +200,8 @@ const CartScreen = () => {
       coupons.map((element) => {
         if (couponCode == element.name) {
           console.log("Coupon Correct");
-          if (cart.totalPrice > element.criteria) {
+
+          if (cart.itemsPrice > element.criteria) {
             setDiscontBtnClicked(true);
             notifySucess("Coupon Applied Sucessfully");
             setDiscountError(false);

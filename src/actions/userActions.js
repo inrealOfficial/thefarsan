@@ -33,6 +33,7 @@ import {
   USER_UPDATE_REQUEST,
   USER_UPDATE_SUCESS,
 } from "../constants/userConstants";
+import URL from "./../Data/data.json";
 
 export const login = (email, password) => async (dispatch) => {
   try {
@@ -45,7 +46,7 @@ export const login = (email, password) => async (dispatch) => {
       },
     };
     const { data } = await axios.post(
-      "http://localhost:5000/api/users/login",
+      `${URL}api/users/login`,
       { email, password },
       config
     );
@@ -94,11 +95,7 @@ export const register = (dataGiven) => async (dispatch) => {
         "Content-Type": "application/json",
       },
     };
-    const { data } = await axios.post(
-      "https://app-farsan.herokuapp.com/api/users",
-      dataGiven,
-      config
-    );
+    const { data } = await axios.post(`${URL}api/users`, dataGiven, config);
 
     dispatch({
       type: USER_REGISTER_SUCESS,
@@ -136,10 +133,7 @@ export const getUserDetails = (id) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.get(
-      `https://app-farsan.herokuapp.com/api/users/${id}`,
-      config
-    );
+    const { data } = await axios.get(`${URL}api/users/${id}`, config);
 
     dispatch({
       type: USER_DETAILS_SUCESS,
@@ -170,11 +164,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.put(
-      `https://app-farsan.herokuapp.com/api/users/profile`,
-      user,
-      config
-    );
+    const { data } = await axios.put(`${URL}api/users/profile`, user, config);
 
     dispatch({
       type: USER_UPDATE_PROFILE_SUCESS,
@@ -204,10 +194,7 @@ export const listUsers = () => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.get(
-      `https://app-farsan.herokuapp.com/api/users`,
-      config
-    );
+    const { data } = await axios.get(`${URL}api/users`, config);
 
     dispatch({
       type: USER_LIST_SUCESS,
@@ -237,10 +224,7 @@ export const deleteUser = (id) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    await axios.delete(
-      `https://app-farsan.herokuapp.com/api/users/${id}`,
-      config
-    );
+    await axios.delete(`${URL}api/users/${id}`, config);
 
     dispatch({
       type: USER_DELETE_SUCESS,
@@ -271,7 +255,7 @@ export const updateUser = (user) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.put(
-      `https://app-farsan.herokuapp.com/api/users/${user._id}`,
+      `${URL}api/users/${user._id}`,
       user,
       config
     );

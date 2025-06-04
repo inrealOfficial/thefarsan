@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { useCollectionData } from "react-firebase-hooks/firestore";
 import { db } from "../firebase/firebase";
 import "./chat.css";
 import ChatMessage from "./ChatMessage";

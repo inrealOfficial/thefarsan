@@ -7,12 +7,12 @@ import {
   PRODUCT_DELETE_FAIL,
 } from "../constants/productConstants";
 import axios from "axios";
-
+import URL from "./../Data/data.json";
 export const listProducts = () => async (dispatch) => {
   try {
     console.log(process.env);
     dispatch({ type: PRODUCT_LIST_REQUEST });
-    const { data } = await axios.get("http://localhost:5000/api/products");
+    const { data } = await axios.get(`${URL}api/products`);
     dispatch({ type: PRODUCT_LIST_SUCESS, payload: data });
   } catch (error) {
     dispatch({
@@ -38,10 +38,7 @@ export const deleteProduct = (id) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    await axios.delete(
-      `https://hcc-backend.onrender.com/api/products/$${id}`,
-      config
-    );
+    await axios.delete(`${URL}api/products/$${id}`, config);
 
     dispatch({
       type: PRODUCT_DELETE_SUCESS,

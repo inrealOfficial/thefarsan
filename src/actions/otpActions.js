@@ -7,7 +7,7 @@ import {
   OTP_VERIFY_REQUEST,
   OTP_VERIFY_SUCESS,
 } from "../constants/otpConstants";
-
+import URL from "./../Data/data.json";
 export const createOTPHandler = (number) => async (dispatch) => {
   try {
     dispatch({
@@ -20,7 +20,7 @@ export const createOTPHandler = (number) => async (dispatch) => {
       },
     };
     const { data } = await axios.post(
-      `https://app-farsan.herokuapp.com/api/sms/send`,
+      `${URL}api/sms/send`,
       { number: `+91${number}` },
       config
     );
@@ -53,7 +53,7 @@ export const verifyOTPHandler =
         },
       };
       const { data } = await axios.post(
-        `https://app-farsan.herokuapp.com/api/sms/verify`,
+        `${URL}api/sms/verify`,
         { number: `+91${phonNumber}`, OTPcode: otp },
         config
       );

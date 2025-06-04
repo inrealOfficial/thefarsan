@@ -4,12 +4,10 @@ import {
   CART_REMOVE_ITEM,
   CART_SAVE_SHIPPING_ADRESS,
 } from "../constants/cartConstants";
-
+import URL from "./../Data/data.json";
 export const addToCart =
   (id, qty, qtSelected) => async (dispatch, getState) => {
-    const { data } = await axios.get(
-      `http://localhost:5000/api/products/${id}`
-    );
+    const { data } = await axios.get(`${URL}api/products/${id}`);
     dispatch({
       type: CART_ADD_ITEM,
       payload: {
